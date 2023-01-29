@@ -1,0 +1,64 @@
+<style>
+.errorLCblock {
+	color: #ff0000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	margin: 16px;
+}
+
+.errorLCitem {
+	color: #ff0000;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  padding-bottom: 70px; 
+}
+.footer {
+  position: absolute;
+  bottom: -50;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+h5 {
+	font-weight: bold;
+}
+.accountName {
+	font-size: 10px;
+}
+.negativeValueView {
+	color: red;
+	/* font-weight: bold;*/
+}
+.positiveValueView {
+	color: black;
+	/* font-weight: bold;*/
+}
+.negativeValue {
+	color: red;
+	font-size: 12px;
+	/* font-weight: bold;*/
+}
+.positiveValue {
+	color: black;
+	font-size: 12px;
+	/* font-weight: bold;*/
+}
+.positiveAccountValue {
+	color: green;
+	font-weight: bold;
+}
+.negativeAccountValue {
+	color: red;
+	font-weight: bold;
+}
+</style>

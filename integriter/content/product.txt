@@ -50,7 +50,7 @@
 					<th class="text-center">Enterprise</th>
 				</tr>
 				
-				<!-- ************* -->
+				<!-- ************** -->
 				<!-- FREE FEATURES -->
 				<!-- ************* --> 
 				<tr>

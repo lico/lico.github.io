@@ -1,0 +1,210 @@
+<style>
+.gogreen{color: green; font-weight: bold;}
+.gogrey{color: lightgrey;}
+</style>
+<div> 
+	<div class="row">
+		<div class="col-sm-12">
+			&nbsp;<br />
+			&nbsp;
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-8">
+					
+			<h3>What does Integriter enable you to do? </h3>
+			<p>
+				Integriter simplifies the management of your timestamps for long-term validity, 
+				allowing you to focus on your work without the need to worry about technical aspects or time constraints
+			</p>
+			<ul>
+				<li>Ensure the integrity of your files by generating trusted timestamps from our reputable Timestamp Service Authorities (TSA)</li>
+				<li>Maintain the integrity of your timestamps by easily verifying their validity at any time, even after their initial generation</li>
+				<li>Securely store your timestamp data for the long-term by utilizing Integriter.com's reliable and secure storage solution</li>
+				<li>Efficiently manage your timestamps by defining retention policies that align with your specific needs and requirements</li>
+				<li>Ensure the ongoing validity of your timestamps over time by re-stamping them automatically</li>
+			</ul>
+			<p>&nbsp;</p>
+			Some features are free and can be used without creating a user account:
+			<ul class="bltlst">
+				<li ><a href="/tools/timestampAttestation.html">Obtain free timestamp attestations</a> from a Timestamp Service Authority (TSA) for your files,</li>          
+				<li><a href="/tools/timestampChecker.html">Verify the authenticity of your timestamps</a> using the request and response files provided.</li>
+			</ul>
+			
+					
+			<p>&nbsp;</p>
+			<h3>Detailed Features</h3>
+			
+			<small>
+			<table class="table">
+				<colgroup>
+		        	<col class="col-md-3">
+		        	<col class="col-md-3">
+		        	<col class="col-md-3">
+		        	<col class="col-md-3">
+		        </colgroup>
+		        <tr>
+					<th class="text-left">Feature</th>
+					<th class="text-center">Free</th>
+					<th class="text-center">Premium</th>
+					<th class="text-center">Enterprise</th>
+				</tr>
+				
+				<%-- ************* --%>
+				<%-- FREE FEATURES --%>
+				<%-- ************* --%> 
+				<tr>
+					<td class="text-left">Calculate unlimited number of hashcodes for files or strings</td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">
+						Get verified timestamps from trusted Timestamp Service Authorities
+						<ul>
+							<li>Choose from various TSA</li>
+							<li>Choose from various hash algorithms</li>
+							<li>String format: Hex, Base32 or Base64
+						</ul>
+					</td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Download request and response files for a timestamp to verify at a later time</td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Comprehensive documentation and active community support</td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				
+				
+				<%-- **************** --%>
+				<%-- PREMIUM FEATURES --%>
+				<%-- **************** --%>
+				<tr>
+					<td class="text-left">Bulk request timestamp attestations for multiple files at once</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Securely store your timestamp data and files on our servers for later retrieval</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Establish an end-of-life policy for timestamps</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Automatic deletion of expired timestamps (after user confirmation)</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Periodic re-stamping with timestamp chaining for continuous document validity</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Enable multi-user access to your company's data (5 users per account)</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Standard support during working hours</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				
+				<%-- ******************* --%>
+				<%-- ENTERPRISE FEATURES --%>
+				<%-- ******************* --%>
+				<tr>
+					<td class="text-left">Unlimited timestamps and storage</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Configure your own Timestamp Service Authorities</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td> 
+				</tr>
+				<tr>
+					<td class="text-left">Generate multiple timestamps per sensitive document for enhanced verification</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Automate and integrated transactions with our API</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Optionally deploy our product on-premises for greater control and security</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Advanced reporting and analytics</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Dedicated customer support during business hour</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
+					<td class="text-left">Establish an end-of-life policy per category of timestamps</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				
+			</table>
+			</small>
+		</div>
+		<div class="col-sm-4"> 
+			<div class="panel panel-default">
+				
+				<div class="panel-heading">
+			    	<h3 class="panel-title">Contact Us</h3>
+			  	</div>
+			  	<div class="panel-body">
+					<p>
+					Thank you for choosing our service !
+					</p>
+					<p> 
+					We are constantly working to improve our platform and offer new features, so stay tuned for updates.
+					</p>
+					<p>  
+					Please feel free to <a href="mailto:customer.service@integriter.com">contact us</a> if you have any questions, suggestions or concerns.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,56 @@
+			<style>
+			p {
+				padding-top: 10px;
+			}
+			</style>
+			<p>&nbsp;</p>
+			<h3>How to obtain a timestamp from a trusted Timestamp Service Authority (TSA)?</h3>
+	
+			<p>
+			To obtain a timestamp, go to our free <a href="/tools/timestampAttestation.html">timestamp attestation request tool</a>.
+			<ul>
+				<li>Upload your file</li>
+				<li>Select a TSA from the list of trusted authorities</li>
+				<li>Select a hash halgorithm that is supported by the selected TSA (default: SHA-256)</li>
+			</ul>
+
+			<p>As soon as you select a file on your computer, the following happens:</p>
+			 
+			<ul>
+				<li>Integriter sends a request to the selected TSA,</li>
+				<li>The TSA will then create a timestamp token and will send it back to Integriter.</li>
+				<li>After receiving the timestamp from the TSA, Integriter 
+				performs several verifications to ensure the authenticity and integrity of the timestamp data.</li>
+				<li>If the verification succeeds, Integriter will display the timestamp to you along with the request and response files</li>
+			</ul>
+			 
+			<p>Please note: </p>
+			<ul style="list-style: none; font-style: italic;"> 
+				<li><span class="glyphicon glyphicon-ok"></span>&nbsp;To ensure that you have a valid and verifiable record of the timestamp delivered by the TSA, please keep 
+				both the timestamp request file and the timestamp response file. These files together form a complete record 
+				of the timestamping process and will be required in case of any legal or regulatory issues. Please store these 
+				files securely and do not modify them in any way.</li>
+				 
+				<li style="padding-top: 10px;"><span class="glyphicon glyphicon-ok"></span>&nbsp;As part of our paid subscription service, we offer the option 
+				to store your request and response files and timestamp token
+				securely on our servers. This means that if you ever need to retrieve the timestamp or verify the authenticity 
+				of your files in the future, you can do so easily and quickly without having to keep track of these files yourself.
+				
+				<li style="padding-top: 10px;"><span class="glyphicon glyphicon-ok"></span>&nbsp;To ensure the confidentiality and security of your files, 
+				<u>we never transfer them to our servers</u>, 
+				we transfer only the hashcode, the file name and the file size. Your files never leave your machine.</li>
+				
+				</li>
+			</ul>
+	
+			
+			<p>&nbsp;</p>
+			<h3>Storage of Timestamp Data</h3>
+			<p>Rest assured that your timestamp data and information will be stored securely and in compliance with industry standards. 
+			You can access them at any time from your account dashboard and download them as needed.
+			Please note that this service is only available to our paid subscribers. If you are interested in this option, 
+			please consider upgrading to our premium plan to enjoy this and other exclusive benefits.
+			</p>
+			<p>
+			Our web application uses industry-standard cryptographic algorithms and protocols to ensure the security and privacy of your data. We do not store or share your files or personal information, except as necessary to perform the timestamping and verification services.
+			</p>

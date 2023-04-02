@@ -1,0 +1,26 @@
+			<p>&nbsp;</p>
+			<h4>
+			How Integriter's free tools work?
+			</h4>
+	
+			<p>
+			To obtain a timestamp, <a href="/tools/timestampAttestation.html">simply upload your file to our web application</a>, and we will 
+			send a request to a trusted TSA. The TSA will then create a timestamp token, which we will send back to you along with the request 
+			and response files. You can download and store these files for future reference.
+			</p> 
+			<p>
+			<i><span class="glyphicon glyphicon-ok"></span>&nbsp;To ensure the confidentiality and security of your files, we never transfer them to our servers, 
+			we transfer only the hashcode, file name and file size.</i>
+			</p>
+			<p> 
+			<i><span class="glyphicon glyphicon-ok"></span>&nbsp;After receiving the timestamp from the TSA, Integriter 
+			performs several verifications to ensure the authenticity and integrity of the timestamp data.</i>
+			</p>
+	
+			<p>&nbsp;</p>
+			<p>
+			<a href="/tools/timestampChecker.html">To verify the timestamp</a> at any time in the future, simply upload the request 
+			and response files provided by the TSA to our 
+			web application, and we will check that the timestamp token matches the original file and was issued by a trusted TSA. 
+			If the verification is successful, you can be confident that the document or transaction existed at the specified time.
+			</p>

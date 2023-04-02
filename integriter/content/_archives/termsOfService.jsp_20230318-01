@@ -1,0 +1,46 @@
+<%@include file="../common/CommonHeaderMain.jsp"%>
+<body>
+	<%@include file="../common/CommonHeaderMenu.jsp"%>
+	
+<div> 
+	<div class="row">
+		<div class="col-sm-9">
+		
+		<div class="page-header">
+			<h3>${PageTitle}</h3>
+		</div>
+		
+		<div class="panel panel-danger">
+			
+			<div class="panel-heading">
+		    	<h4 class="panel-title">Disclaimer of Warranties</h4>
+		  	</div>
+		  	<div class="panel-body">
+		<p><b>Our service is intended for experimentation and educational purposes only</b>. 
+		It is not intended for use in a production environment, 
+		and the electronic signatures and timestamps generated through our service should not be considered as legally binding 
+		or admissible as evidence in a court of law.</p> 
+		<p><b>They are for demonstration and learning purposes only and should 
+		not be used for any official or legal transactions</b>. We do not warrant that the service will meet legal
+		 requirements or that the operation of the service will be compliant with laws and regulations.</p> 
+		 <p>The service is provided "as is" and "as available" without warranty of any kind, either express or implied, including, but not limited to, 
+		fitness for a particular purpose, availability, security, accuracy, and non-infringement. 
+		We do not warrant that the service will meet your requirements or that the operation of the service will be uninterrupted or error-free. 
+		We also do not warrant that the service or any information transmitted through the service will be secure or free from viruses or other harmful components.</p>
+		<p>In no event shall we be liable for any damages, including, but not limited to, direct, indirect, special, incidental, or consequential damages, 
+		arising out of or in connection with the use or inability to use the Application.</p>
+		 <p>By using our service, you acknowledge that you understand and agree to these terms</p>
+			</div>
+		</div>
+		
+		<h4>Contact Us</h4>
+		If you have any questions about these terms, please <a href="mailto:&#097;&#100;&#109;&#105;&#110;&#064;&#105;&#110;&#116;&#101;&#103;&#114;&#105;&#116;&#101;&#114;&#046;&#099;&#111;&#109;">contact us</a>.
+
+		
+		</div>
+		<div class="col-sm-3"></div>
+		
+	</div>
+</div>	
+
+<%@include file="../common/CommonFooterMain.jsp"%>

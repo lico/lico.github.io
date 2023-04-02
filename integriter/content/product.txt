@@ -96,6 +96,12 @@
 					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
 				</tr>
 				<tr>
+					<td class="text-left">Get timestamps in ASIC-E or ASIC-S format</td>
+					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
+				</tr>
+				<tr>
 					<td class="text-left">Securely store your timestamp data and files on our servers for later retrieval</td>
 					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
 					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>

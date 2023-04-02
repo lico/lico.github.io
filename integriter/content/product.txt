@@ -46,7 +46,7 @@
 		        <tr>
 					<th class="text-left">Feature</th>
 					<th class="text-center">Free</th>
-					<th class="text-center">Premium</th>
+					<th class="text-center">Premium</th> 
 					<th class="text-center">Enterprise</th>
 				</tr>
 				

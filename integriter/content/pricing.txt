@@ -59,12 +59,12 @@ demo10{background:#C0BFBF;padding:30px 0}
 			<p>&nbsp;</p>
 		
 			
-		<%-- found on https://web-eau.net/en/blog/10-examples-pricing-table-bootstrap --%>
+		<!-- found on https://web-eau.net/en/blog/10-examples-pricing-table-bootstrap -->
             <div class="container">
                 <div class="row">
-                	<%-- *************** --%>
-                    <%-- FREE PLAN       --%>
-                    <%-- *************** --%>
+                	<!-- *************** -->
+                    <!-- FREE PLAN       -->
+                    <!-- *************** -->
                     <div class="col-md-4 col-sm-6">
                         <div class="pricingTable10">
                             <div class="pricingTable-header">
@@ -86,18 +86,18 @@ demo10{background:#C0BFBF;padding:30px 0}
 									<li>Comprehensive documentation and active community support</li>
 								</ul>
                             </div>
-                            <%-- <a href="/tools/timestampAttestation.html" class="read">Get Started</a> --%>
+                            <!-- <a href="/tools/timestampAttestation.html" class="read">Get Started</a> -->
                             <button type="button" class="btn btn-info btn-lg" onclick="document.location='/tools/timestampAttestation.html';">Get Started</button>
                         </div>
                     </div>
-                    <%-- *************** --%>
-                    <%-- FREE PLAN       --%>
-                    <%-- *************** --%>
+                    <!-- *************** -->
+                    <!-- FREE PLAN       -->
+                    <!-- *************** -->
                     
                     
-                    <%-- ************ --%>
-                    <%-- PREMIUM PLAN --%>
-                    <%-- ************ --%>
+                    <!-- ************ -->
+                    <!-- PREMIUM PLAN -->
+                    <!-- ************ -->
                     <div class="col-md-4 col-sm-6">
                         <div class="pricingTable10">
                             <div class="pricingTable-header">
@@ -121,18 +121,18 @@ demo10{background:#C0BFBF;padding:30px 0}
 									<li>Standard support during working hours</li>
 								</ul>
                             </div>
-                            <%-- <a href="#" class="read">Get Started</a> --%>
+                            <!-- <a href="#" class="read">Get Started</a> -->
                             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#pricingModal">Get Started</button>
                         </div>
                     </div>
-                    <%-- ************ --%>
-                    <%-- PREMIUM PLAN --%>
-                    <%-- ************ --%>
+                    <!-- ************ -->
+                    <!-- PREMIUM PLAN -->
+                    <!-- ************ -->
                     
                     
-                    <%-- *************** --%>
-                    <%-- ENTERPRISE PLAN --%>
-                    <%-- *************** --%>
+                    <!-- *************** -->
+                    <!-- ENTERPRISE PLAN -->
+                    <!-- *************** -->
                     <div class="col-md-4 col-sm-6">
                         <div class="pricingTable10">
                             <div class="pricingTable-header">
@@ -157,13 +157,13 @@ demo10{background:#C0BFBF;padding:30px 0}
                                     <li>Dedicated customer support during business hour</li>
                                 </ul>
                             </div>
-                            <%-- <a href="#" class="read">Get Started</a> --%>
+                            <!-- <a href="#" class="read">Get Started</a> -->
                             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#pricingModal">Get Started</button>
                         </div>
                     </div>
-                    <%-- *************** --%>
-                    <%-- ENTERPRISE PLAN --%>
-                    <%-- *************** --%>
+                    <!-- *************** -->
+                    <!-- ENTERPRISE PLAN -->
+                    <!-- *************** -->
                     
                  </div>
             </div>

@@ -50,9 +50,9 @@
 					<th class="text-center">Enterprise</th>
 				</tr>
 				
-				<%-- ************* --%>
-				<%-- FREE FEATURES --%>
-				<%-- ************* --%> 
+				<!-- ************* -->
+				<!-- FREE FEATURES -->
+				<!-- ************* --> 
 				<tr>
 					<td class="text-left">Calculate unlimited number of hashcodes for files or strings</td>
 					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
@@ -86,9 +86,9 @@
 				</tr>
 				
 				
-				<%-- **************** --%>
-				<%-- PREMIUM FEATURES --%>
-				<%-- **************** --%>
+				<!-- **************** -->
+				<!-- PREMIUM FEATURES -->
+				<!-- **************** -->
 				<tr>
 					<td class="text-left">Bulk request timestamp attestations for multiple files at once</td>
 					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>
@@ -132,9 +132,9 @@
 					<td class="text-center"><span class="glyphicon glyphicon-ok gogreen"></span></td>
 				</tr>
 				
-				<%-- ******************* --%>
-				<%-- ENTERPRISE FEATURES --%>
-				<%-- ******************* --%>
+				<!-- ******************* -->
+				<!-- ENTERPRISE FEATURES -->
+				<!-- ******************* -->
 				<tr>
 					<td class="text-left">Unlimited timestamps and storage</td>
 					<td class="text-center"><span class="glyphicon glyphicon-minus gogrey"></span></td>

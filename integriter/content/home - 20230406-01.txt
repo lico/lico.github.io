@@ -2,7 +2,14 @@
 	ul.bltlst li{ padding: 5px 0px; }
 </style>
 <div> 
-	
+	<div class="row" style="padding-top: 30px">
+		<div class="col-sm-12">
+			<div class="page-header">
+				<h1>Integriter.com</h1>
+				<h2><i>Ensuring documents integrity, one timestamp at a time</i></h2>
+			</div>
+		</div>
+	</div>
 	<div class="row">
 		<div class="col-sm-8">
 					

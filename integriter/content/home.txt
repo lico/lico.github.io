@@ -7,8 +7,9 @@
 		<div class="col-sm-8">
 					
 			<h3>
-				Integriter.com offers free hashcode calculations and secure electronic timestamps from multiple trusted Timestamp Service Authorities (TSAs). 
-				By keeping all file verification local, you never have to upload your data—ensuring a seamless, reliable way to prove file integrity without compromising privacy.
+				Integriter.com offers free hashcode calculations and secure electronic timestamps from multiple trusted Timestamp Service Authorities (TSAs).
+				>br />
+				By keeping all file verification local, you never have to upload your data, ensuring a seamless, reliable way to prove file integrity without compromising privacy.
 			</h3>
 			<p>&nbsp;</p>
 			
@@ -16,9 +17,7 @@
 				
 			<p>&nbsp;</p>		
 			<p>
-			<h3>Are you ready to experience the benefits of secure and reliable file timestamping? 
-			Get started today by exploring <a href="/tools/timestampAttestation.html">Integriter's free online tools</a>, 
-			designed to streamline the process of managing your files and ensuring their integrity</h3>
+			<h3>Discover the free tools: </h3>
 			</p>
 			<ul class="bltlst">
 				<li><a href="/tools/timestampAttestation.html">Obtain free timestamp attestations</a> for your files from one of the selected trusted Timestamp Service Authorities (TSA),</li>          

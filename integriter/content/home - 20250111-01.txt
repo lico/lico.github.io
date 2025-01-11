@@ -19,7 +19,7 @@
 			designed to streamline the process of managing your files and ensuring their integrity</h3>
 			</p>
 			<ul class="bltlst">
-				<li><a href="/tools/timestampAttestation.html">Obtain free timestamp attestations</a> for your files from one of the selected trusted Timestamp Service Authorities (TSA),</li>          
+				<li><a href="/tools/timestampAttestation.html">Obtain free timestamp attestations</a> for your files from one of our trusted Timestamp Service Authorities (TSA),</li>          
 				<li><a href="/tools/timestampChecker.html">Verify the authenticity of your timestamps</a> using the request and response files provided by the trusted TSA</li>
 				<li><a href="/tools/hashcodeForFile.html">Calculate hashcodes</a> for your files using various cryptographic hash function like SHA-256</li> 
 			</ul>
@@ -63,8 +63,8 @@
 					<p> 
 					We are constantly working to improve our platform and offer new features, so stay tuned for updates.
 					</p>
-					<p> 
-					Integriter.com is a free service delivered by <a href="https://www.upandcoding.com">UpAndCoding.com</a>. Feel free to <a href="mailto:admin@upandcoding.com">contact us</a> if you have any questions, suggestions or concerns.
+					<p>  
+					Please feel free to <a href="mailto:customer.service@integriter.com">contact us</a> if you have any questions, suggestions or concerns.
 					</p>
 				</div>
 			</div>

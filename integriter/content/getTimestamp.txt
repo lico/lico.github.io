@@ -43,14 +43,3 @@
 				</li>
 			</ul>
 	
-			
-			<p>&nbsp;</p>
-			<h3>Storage of Timestamp Data</h3>
-			<p>Rest assured that your timestamp data and information will be stored securely and in compliance with industry standards. 
-			You can access them at any time from your account dashboard and download them as needed.
-			Please note that this service is only available to our paid subscribers. If you are interested in this option, 
-			please consider upgrading to our premium plan to enjoy this and other exclusive benefits.
-			</p>
-			<p>
-			Our web application uses industry-standard cryptographic algorithms and protocols to ensure the security and privacy of your data. We do not store or share your files or personal information, except as necessary to perform the timestamping and verification services.
-			</p>

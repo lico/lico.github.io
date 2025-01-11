@@ -4,30 +4,7 @@
 <div> 
 	<p>&nbsp;</p>
 	<div class="row">
-		<div class="col-sm-8">
-					
-			<h3>
-				Integriter.com offers free hashcode calculations and secure electronic timestamps from multiple trusted Timestamp Service Authorities (TSAs).
-				<br />
-				<br />
-				By keeping all file verification local, you never have to upload your data, ensuring a seamless, reliable way to prove file integrity without compromising privacy.
-			</h3>
-			<p>&nbsp;</p>
-			
-			<img width="100%" height="100%" src="https://cdn.upandcoding.com/integriter/img/integriter_services3.png" title="Ensuring documents integrity, one timestamp at a time"/>
-				
-			<p>&nbsp;</p>		
-			<p>
-			<h3>Discover the free tools: </h3>
-			</p>
-			<ul class="bltlst">
-				<li><a href="/tools/timestampAttestation.html">Obtain free timestamp attestations</a> for your files from one of the selected trusted Timestamp Service Authorities (TSA),</li>          
-				<li><a href="/tools/timestampChecker.html">Verify the authenticity of your timestamps</a> using the request and response files provided by the trusted TSA</li>
-				<li><a href="/tools/hashcodeForFile.html">Calculate hashcodes</a> for your files using various cryptographic hash function like SHA-256</li> 
-			</ul>
-		
-	
-		</div>
+		<!-- TOOL BAR -->
 		<div class="col-sm-4">
 			<div class="panel panel-success">
 				
@@ -68,6 +45,33 @@
 					</p>
 				</div>
 			</div>
+		</div>
+
+	
+		<!-- MAIN -->
+		<div class="col-sm-8">
+					
+			<h3>
+				Integriter.com offers free hashcode calculations and secure electronic timestamps from multiple trusted Timestamp Service Authorities (TSAs).
+				<br />
+				<br />
+				By keeping all file verification local, you never have to upload your data, ensuring a seamless, reliable way to prove file integrity without compromising privacy.
+			</h3>
+			<p>&nbsp;</p>
+			
+			<img width="100%" height="100%" src="https://cdn.upandcoding.com/integriter/img/integriter_services3.png" title="Ensuring documents integrity, one timestamp at a time"/>
+				
+			<p>&nbsp;</p>		
+			<p>
+			<h3>Discover the free tools: </h3>
+			</p>
+			<ul class="bltlst">
+				<li><a href="/tools/timestampAttestation.html">Obtain free timestamp attestations</a> for your files from one of the selected trusted Timestamp Service Authorities (TSA),</li>          
+				<li><a href="/tools/timestampChecker.html">Verify the authenticity of your timestamps</a> using the request and response files provided by the trusted TSA</li>
+				<li><a href="/tools/hashcodeForFile.html">Calculate hashcodes</a> for your files using various cryptographic hash function like SHA-256</li> 
+			</ul>
+		
+	
 		</div>
 	</div>
 </div>

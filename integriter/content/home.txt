@@ -60,13 +60,9 @@
 			  	</div>
 			  	<div class="panel-body">
 					<p>
-					Thank you for choosing our service !
-					</p>
-					<p> 
-					We are constantly working to improve our platform and offer new features, so stay tuned for updates.
-					</p>
-					<p> 
-					Integriter.com is a free service delivered by <a href="https://www.upandcoding.com">UpAndCoding.com</a>. Feel free to <a href="mailto:admin@upandcoding.com">contact us</a> if you have any questions, suggestions or concerns.
+					Thank you for choosing <b>Integriter.com</b>!
+					We’re constantly enhancing our platform and adding new features, so stay tuned for updates.
+					Integriter.com is a free service provided by UpAndCoding.com. If you have any questions, suggestions, or concerns, feel free to <a href="https://www.upandcoding.com">reach out</a>. We’d love to hear from you!
 					</p>
 				</div>
 			</div>

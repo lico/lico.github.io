@@ -44,7 +44,7 @@ We may revise and update these Terms from time to time at our sole discretion. A
 </p>
 		
 		<h4>Contact Us</h4>
-		If you have any questions about these terms, please <a href="mailto:customer.service@integriter.com">contact us</a>.
+		If you have any questions about these terms, please <a href="mailto:integriter&#64;upandcoding&#46;com">contact us</a>.
 
 		
 		</div>

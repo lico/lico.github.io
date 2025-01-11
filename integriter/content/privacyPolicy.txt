@@ -96,6 +96,6 @@
 <p>Wekeeps its privacy policy under regular review and places any updates on this web page. This privacy policy was last updated on 9 January 2019.</p>
 <h3>How to contact us</h3>
 <p>If you have any questions about Our Company&rsquo;s privacy policy, the data we hold on you, or you would like to exercise one of your data protection rights, please do not hesitate to contact us.</p>
-<p>Email us at: admin@integriter.com</p>
+<p>Email us at: integriter&#64;upandcoding&#46;com</p>
 <p>&nbsp;</p>
 

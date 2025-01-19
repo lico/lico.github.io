@@ -29,12 +29,7 @@
 				<li><span class="glyphicon glyphicon-ok"></span>&nbsp;To ensure that you have a valid and verifiable record of the timestamp delivered by the TSA, please keep 
 				both the timestamp request file and the timestamp response file. These files together form a complete record 
 				of the timestamping process and will be required in case of any legal or regulatory issues. Please store these 
-				files securely and do not modify them in any way.</li>
-				 
-				<li style="padding-top: 10px;"><span class="glyphicon glyphicon-ok"></span>&nbsp;As part of our paid subscription service, we offer the option 
-				to store your request and response files and timestamp token
-				securely on our servers. This means that if you ever need to retrieve the timestamp or verify the authenticity 
-				of your files in the future, you can do so easily and quickly without having to keep track of these files yourself.
+				files securely and do not modify them in any way.</li>		 
 				
 				<li style="padding-top: 10px;"><span class="glyphicon glyphicon-ok"></span>&nbsp;To ensure the confidentiality and security of your files, 
 				<u>we never transfer them to our servers</u>, 

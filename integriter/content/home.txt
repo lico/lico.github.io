@@ -2,7 +2,6 @@
 	ul.bltlst li{ padding: 5px 0px; }
 </style>
 <div> 
-	<p>&nbsp;</p>
 	<div class="row">
 		<!-- TOOL BAR -->
 		<div class="col-sm-4">

@@ -1,0 +1,52 @@
+
+				
+		<h4>Introduction</h4>
+		<p>
+		Welcome to our Timestamps web application! These Terms of Service ("Terms") govern your use of our website, products, and services (collectively, the "Service"). By using our Service, you agree to these Terms. If you do not agree to these Terms, you may not use our Service.
+		</p>
+
+<h4>Using our Service</h4>
+<p>
+You must be at least 18 years old to use our Service. You may use our Service only for lawful purposes and in accordance with these Terms. You agree not to use our Service:
+</p>
+
+<p>
+In any way that violates any applicable federal, state, local, or international law or regulation.
+For the purpose of exploiting, harming, or attempting to exploit or harm minors in any way by exposing them to inappropriate content or otherwise.
+To transmit, or procure the sending of, any advertising or promotional material without our prior written consent, including any "junk mail," "chain letter," "spam," or any other similar solicitation.
+To impersonate or attempt to impersonate our company, a company employee, another user, or any other person or entity.
+To engage in any other conduct that restricts or inhibits anyone's use or enjoyment of the Service, or which, as determined by us, may harm our company or users of the Service or expose them to liability.
+</p>
+
+<p>
+By using our timestamp service, you agree to our terms of service and privacy policy. You are solely responsible for your use of the service and any content you upload or timestamp. We reserve the right to terminate your access to the service at any time, without notice, if you violate these terms of service or engage in any activity that is illegal or harmful to our platform or users. We make no guarantees about the accuracy, reliability, or availability of our timestamp service, and we disclaim all liability for any damages or losses you may incur while using our platform. By using our service, you agree to indemnify us and hold us harmless against any claims, damages, or losses that arise from your use of our platform
+</p>
+
+
+<h4>Intellectual Property</h4>
+<p>
+Our Service and its entire contents, features, and functionality (including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof), are owned by our company, its licensors, or other providers of such material and are protected by United States and international copyright, trademark, patent, trade secret, and other intellectual property or proprietary rights laws.
+</p>
+
+<h4>Disclaimer of Warranties</h4>
+<p>
+THE SERVICE AND ALL CONTENT, PRODUCTS, AND SERVICES INCLUDED IN OR ACCESSIBLE FROM THE SERVICE ARE PROVIDED "AS IS" AND WITHOUT WARRANTIES OF ANY KIND (EXPRESS, IMPLIED, OR STATUTORY, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE), ALL OF WHICH WE HEREBY EXPRESSLY DISCLAIM TO THE FULLEST EXTENT PERMITTED BY LAW. WE DO NOT WARRANT THAT THE SERVICE WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS WILL BE CORRECTED, OR THAT THE SERVICE OR THE SERVER THAT MAKES THE SERVICE AVAILABLE ARE FREE OF VIRUSES OR OTHER HARMFUL COMPONENTS.
+</p>
+
+<h4>Limitation of Liability</h4>
+<p>
+IN NO EVENT WILL OUR COMPANY, ITS AFFILIATES, LICENSORS, SERVICE PROVIDERS, EMPLOYEES, AGENTS, OFFICERS, OR DIRECTORS BE LIABLE FOR DAMAGES OF ANY KIND (INCLUDING, WITHOUT LIMITATION, DIRECT, INDIRECT, SPECIAL, INCIDENTAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES) ARISING OUT OF OR IN CONNECTION WITH YOUR USE, OR INABILITY TO USE, THE SERVICE, ANY CONTENT, PRODUCTS, OR SERVICES OBTAINED THROUGH THE SERVICE, OR OTHERWISE RELATED TO THE SERVICE, REGARDLESS OF WHETHER SUCH DAMAGES ARE BASED ON CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE, EVEN IF WE HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+</p>
+
+<h4>Changes to Terms</h4>
+<p>
+We may revise and update these Terms from time to time at our sole discretion. All changes are effective immediately when we post them, and apply to all access to and use of the Service thereafter. Your continued use of the Service following the posting of revised Terms means that you accept and agree to the changes.
+</p>
+		
+		<h4>Contact Us</h4>
+		If you have any questions about these terms, please <a href="mailto:integriter&#64;upandcoding&#46;com">contact us</a>.
+
+		
+		</div>
+		<div class="col-sm-3"></div>
+		

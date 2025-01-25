@@ -5,37 +5,41 @@
 	<div class="row">
 		<!-- TOOL BAR -->
 		<div class="col-sm-4">
-			<div class="card border-success mb-3">
-			  <div class="card-header bg-success text-white">
-				<h3 class="card-title mb-0">What is a timestamp, and why is it important?</h3>
-			  </div>
-			  <div class="card-body">
-				<p class="card-text">
-				  A timestamp is a digital signature that proves that a particular file or document existed at a specific point in time.
-				</p>
-				<p class="card-text">
-				  It is similar to a notary seal or a postmark, but it is created using cryptographic techniques to ensure its integrity and non-repudiation.
-				</p>
-				<p class="card-text">
-				  Timestamps are important for legal, financial, and regulatory reasons, as they can provide evidence of 
-				  the existence and authenticity of a document or transaction. 
-				</p>
-				<p class="card-text">
-				  They can also help prevent disputes and fraud, as they provide a reliable way to prove the chronological order of events.
-				</p>
-			  </div>
+			<div class="panel panel-success">
+				
+				<div class="panel-heading">
+			    	<h3 class="panel-title">What is a timestamp, and why is it important?</h3>
+			  	</div>
+			  	<div class="panel-body">
+					<p>
+					A timestamp is a digital signature that proves that a particular file or document existed at a specific point in time.
+					</p>
+					<p> 
+					It is similar to a notary seal or a postmark, but it is created using cryptographic techniques to ensure its integrity and non-repudiation.
+					</p>
+			
+					<p>
+					Timestamps are important for legal, financial, and regulatory reasons, as they can provide evidence of 
+					the existence and authenticity of a document or transaction. 
+					</p>
+					<p>
+					They can also help prevent disputes and fraud, as they provide a reliable way to prove the chronological order of events.
+					</p>
+					
+				</div>
 			</div>
 			
-			<div class="card border-success mb-3">
-			  <div class="card-header bg-success text-white">
-				<h3 class="card-title mb-0">Contact Us</h3>
-			  </div>
-			  <div class="card-body">
-				<p class="card-text">
+			<div class="panel panel-info">
+				
+				<div class="panel-heading">
+			    	<h3 class="panel-title">Contact Us</h3>
+			  	</div>
+			  	<div class="panel-body">
+					<p>
 					Thank you for choosing <b>Integriter.com</b>!
 					We’re constantly enhancing our platform and adding new features, so stay tuned for updates.
 					</p>
-					<p class="card-text">
+					<p>
 					Integriter.com is a free service provided by UpAndCoding.com. If you have any questions, suggestions, or concerns, feel free to <a href="mailto:integriter&#64;upandcoding&#46;com" style="font-weight: bold; text-decoration: underline;">contact us</a>. We’d love to hear from you!
 					</p>
 				</div>

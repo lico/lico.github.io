@@ -15,17 +15,18 @@
 		
 		<p>&nbsp;</p>
 
-		<div class="card border-success mb-3">
-			  <div class="card-header bg-success text-white">
-				<h3 class="card-title mb-0">Information and Disclaimers for Our Free Tools</h3>
-			  </div>
-			  <div class="card-body">
-				<p class="card-text">		  		
-				Please note that the free tools we provide are offered on an as-is basis and do not come with any guarantees or warranties. 
+		<div class="panel panel-info">
+			
+			<div class="panel-heading">
+		    	<h3 class="panel-title">Information and Disclaimers for Our Free Tools</h3>
+		  	</div>
+		  	<div class="panel-body">
+		  		<p>
+		  		Please note that the free tools we provide are offered on an as-is basis and do not come with any guarantees or warranties. 
 		  		While we strive to make our tools as accurate and reliable as possible, we cannot guarantee their effectiveness or suitability 
 		  		for your specific needs.
 
-				<p class="card-text">
+				<p>
 				Thank you for using our tools, and please don't hesitate to contact us if you have any questions or concerns.
 		  		</p>
 			</div>

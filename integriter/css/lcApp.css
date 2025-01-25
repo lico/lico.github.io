@@ -32,33 +32,4 @@ body {
 h5 {
 	font-weight: bold;
 }
-.accountName {
-	font-size: 10px;
-}
-.negativeValueView {
-	color: red;
-	/* font-weight: bold;*/
-}
-.positiveValueView {
-	color: black;
-	/* font-weight: bold;*/
-}
-.negativeValue {
-	color: red;
-	font-size: 12px;
-	/* font-weight: bold;*/
-}
-.positiveValue {
-	color: black;
-	font-size: 12px;
-	/* font-weight: bold;*/
-}
-.positiveAccountValue {
-	color: green;
-	font-weight: bold;
-}
-.negativeAccountValue {
-	color: red;
-	font-weight: bold;
-}
 </style>

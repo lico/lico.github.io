@@ -6,7 +6,7 @@
 		<!-- TOOL BAR -->
 		<div class="col-sm-4">
 			<div class="card border-success mb-3">
-			  <div class="card-header bg-success text-white">
+			  <div class="card-header bg-success text-white w-100">
 				<h3 class="card-title mb-0">What is a timestamp, and why is it important?</h3>
 			  </div>
 			  <div class="card-body">

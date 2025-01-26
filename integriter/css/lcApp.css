@@ -13,20 +13,21 @@
 
 /* Sticky footer styles
 -------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
+html,
 body {
-  padding-bottom: 70px; 
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
-.footer {
-  position: absolute;
-  bottom: -50;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 h5 {
@@ -35,5 +36,73 @@ h5 {
 
 /* FOOTER
 -------------------------------------------------- */
+footer.boldy {
+  background-color: #f3f6fd;
+  flex-shrink: 0;
+  padding: 20px 0;
+}
+
+footer.boldy .mul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer.boldy .mul > li {
+  padding: 4px;
+  color: #c5cae9;
+}
+
+footer.boldy .mul > li:hover {
+  color: #957bda;
+  cursor: pointer;
+}
+
+footer.boldy .mhr {
+  border-width: 3px;
+}
+
+footer.boldy .card {
+  padding: 2% 7%;
+}
+
+footer.boldy .social > i {
+  padding: 1%;
+}
+
+footer.boldy .social > i:hover {
+  color: #957bda;
+  cursor: pointer;
+}
+
+footer.boldy .policy > div {
+  padding: 4px;
+}
+
+footer.boldy .heading {
+  color: black;
+}
+
+footer.boldy .dividerFooter {
+  border-top: 2px solid;
+}
+
+footer.boldy a {
+  color: black;
+  text-decoration: none;
+}
+
+footer.boldy a:hover {
+  color: #957bda;
+}
+
+/* CAPTCHA
+-------------------------------------------------- */
+.g-recaptcha {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+}
 
 </style>

@@ -54,6 +54,14 @@ h3 {
 	border-width: 2px;
 }
 
+/* Remove underline */
+.no-link-underline a {
+    text-decoration: none;
+}
+/* If you want the underline to appear on hover */
+.no-link-underline a:hover {
+    text-decoration: underline;
+}
 
 /* ***************** */
 /* BOOTSTRAP3 THEMES */

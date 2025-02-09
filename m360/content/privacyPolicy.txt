@@ -1,0 +1,101 @@
+		
+		
+<p>This privacy policy will explain how we use the personal data we collect from you when you use our website.</p>
+<p>Topics:</p>
+<ul>
+<li>What data do we collect?</li>
+<li>How do we collect your data?</li>
+<li>How will we use your data?</li>
+<li>How do we store your data?</li>
+<li>Marketing</li>
+<li>What are your data protection rights?</li>
+<li>What are cookies?</li>
+<li>How do we use cookies?</li>
+<li>What types of cookies do we use?</li>
+<li>How to manage your cookies</li>
+<li>Privacy policies of other websites</li>
+<li>Changes to our privacy policy</li>
+<li>How to contact us</li>
+<li>How to contact the appropriate authorities</li>
+</ul>
+<h3>What data do we collect?</h3>
+<p>We collect the following data:</p>
+<ul>
+<li>Navigation usage for our analytics</li>
+<li>String and files that you submit through the service</li>
+</ul>
+<p>We DO NOT collect the following data:</p>
+<ul>
+<li>Personal identification information (Name, email address, phone number, etc.)</li>
+</ul>
+<p>&nbsp;</p>
+<h3>How do we collect your data?</h3>
+<p>You directly provide Wewith most of the data we collect. We collect data and process data when you:</p>
+<ul>
+<li>Register online or place an order for any of our products or services.</li>
+<li>Voluntarily complete a customer survey or provide feedback on any of our message boards or via email.</li>
+<li>Use or view our website via your browser&rsquo;s cookies.</li>
+</ul>
+<p>We may also receive your data indirectly from the following sources:</p>
+<ul>
+<li>NO other source</li>
+</ul>
+<h3>How will we use your data?</h3>
+<p>We collect your data so that we can:</p>
+<ul>
+<li>Improve the quality of our service</li>
+<li>Email you with special offers on other products and services we think you might like.</li>
+<li>[Add how else yWeuses data]</li>
+</ul>
+<p>We do not:</p>
+<ul>
+<li>Contact you</li>
+<li>Transfer your data to third parties</li>
+<li>Keep your data more than a few hours after the processing</li>
+</ul>
+<p>Data are kept only for the service. No other usage !</p>
+<p>If you agree, we will share your data with our partner companies so that they may offer you their products and services.</p>
+<ul>
+<li>Data are NOT shared with any individual or organization,</li>
+<li>Exception : in case we would process your order, it may send your data to, and also use the resulting information from, credit reference agencies to prevent fraudulent purchases.</li>
+</ul>
+<h3>How do we store your data?</h3>
+<p>Your data are not stored permanently. They are deleted after a few hours.</p>
+<p>Google stores navigation data on its servers.&nbsp;</p>
+<p>&nbsp;</p>
+<h3>What are your data protection rights?</h3>
+<p>Wewould like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+<p><strong>The right to access</strong>&nbsp;&ndash; You have the right to request Wefor copies of your personal data. We may charge you a small fee for this service.</p>
+<p><strong>The right to rectification</strong>&nbsp;&ndash; You have the right to request that Wecorrect any information you believe is inaccurate. You also have the right to request Weto complete the information you believe is incomplete.</p>
+<p><strong>The right to erasure</strong>&nbsp;&ndash; You have the right to request that Weerase your personal data, under certain conditions.</p>
+<p><strong>The right to restrict processing</strong>&nbsp;&ndash; You have the right to request that Werestrict the processing of your personal data, under certain conditions.</p>
+<p><strong>The right to object to processing</strong>&nbsp;&ndash; You have the right to object to Our Company&rsquo;s processing of your personal data, under certain conditions.</p>
+<p><strong>The right to data portability</strong>&nbsp;&ndash; You have the right to request that Wetransfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+<p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email:</p>
+<p>Or write to us: admin@integriter.com</p>
+<h3>Cookies</h3>
+<p>Cookies are text files placed on your computer to collect standard Internet log information and visitor behavior information. When you visit our websites, we may collect information from you automatically through cookies or similar technology</p>
+<p>For further information, visit allaboutcookies.org.</p>
+<h3>How do we use cookies?</h3>
+<p>Weuses cookies in a range of ways to improve your experience on our website, including:</p>
+<ul>
+<li>Keeping you signed in (not yet available)</li>
+<li>Understanding how you use our website</li>
+</ul>
+<h3>What types of cookies do we use?</h3>
+<p>There are a number of different types of cookies, however, our website uses:</p>
+<ul>
+<li>Functionality &ndash; Weuses these cookies so that we recognize you on our website and remember your previously selected preferences. These could include what language you prefer and location you are in. A mix of first-party and third-party cookies are used.</li>
+<li>Advertising &ndash; Weuses these cookies to collect information about your visit to our website, the content you viewed, the links you followed and information about your browser, device, and your IP address. Wesometimes shares some limited aspects of this data with third parties for advertising purposes. We may also share online data collected through cookies with our advertising partners. This means that when you visit another website, you may be shown advertising based on your browsing patterns on our website.</li>
+</ul>
+<h3>How to manage cookies</h3>
+<p>You can set your browser not to accept cookies, and the above website tells you how to remove cookies from your browser. However, in a few cases, some of our website features may not function as a result.</p>
+<h3>Privacy policies of other websites</h3>
+<p>The Wewebsite contains links to other websites. Our privacy policy applies only to our website, so if you click on a link to another website, you should read their privacy policy.</p>
+<h3>Changes to our privacy policy</h3>
+<p>Wekeeps its privacy policy under regular review and places any updates on this web page. This privacy policy was last updated on 9 January 2019.</p>
+<h3>How to contact us</h3>
+<p>If you have any questions about Our Company&rsquo;s privacy policy, the data we hold on you, or you would like to exercise one of your data protection rights, please do not hesitate to contact us.</p>
+<p>Email us at: integriter&#64;upandcoding&#46;com</p>
+<p>&nbsp;</p>
+

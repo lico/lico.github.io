@@ -1,0 +1,227 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"></link>
+<style>
+	ul.pcng { list-style: none; } /* Remove default bullets */
+	
+	ul.pcng li::before {
+	    content: "\2611"; /* Unicode bullet symbol */
+	    color: blue;  /* Bullet color */
+		
+		/* Optional tweaks */
+	    font-weight: bold;
+	    padding-right: 10px;
+	}
+	
+	ul.pcng li {
+	    padding: 10px 0px 0px 0px;
+	}
+	
+demo10{background:#C0BFBF;padding:30px 0}
+.pricingTable10{text-align:center}
+.pricingTable10 .pricingTable-header{padding:30px 0;background:#4d4d4d;position:relative;transition:all .3s ease 0s}
+.pricingTable10:hover .pricingTable-header{background:#09b2c6}
+.pricingTable10 .pricingTable-header:after,.pricingTable10 .pricingTable-header:before{content:"";width:16px;height:16px;border-radius:50%;border:1px solid #d9d9d8;position:absolute;bottom:12px}
+.pricingTable10 .pricingTable-header:before{left:40px}
+.pricingTable10 .pricingTable-header:after{right:40px}
+.pricingTable10 .heading{font-size:20px;color:#fff;text-transform:uppercase;letter-spacing:2px;margin-top:0}
+.pricingTable10 .price-value{display:inline-block;position:relative;font-size:55px;font-weight:700;color:#09b1c5;transition:all .3s ease 0s}
+.pricingTable10:hover .price-value{color:#fff}
+.pricingTable10 .currency{font-size:30px;font-weight:700;position:absolute;top:6px;left:-19px}
+.pricingTable10 .month{font-size:16px;color:#fff;position:absolute;bottom:15px;right:-65px;text-transform:uppercase}
+.pricingTable10 .pricing-content{padding-top:50px;background:#fff;position:relative}
+.pricingTable10 .pricing-content:after,.pricingTable10 .pricing-content:before{content:"";width:16px;height:16px;border-radius:50%;border:1px solid #7c7c7c;position:absolute;top:12px}
+.pricingTable10 .pricing-content:before{left:40px}
+.pricingTable10 .pricing-content:after{right:40px}
+.pricingTable10 .pricing-content ul{padding:0 20px;margin:0;list-style:none}
+.pricingTable10 .pricing-content ul:after,.pricingTable10 .pricing-content ul:before{content:"";width:8px;height:46px;border-radius:3px;background:linear-gradient(to bottom,#818282 50%,#727373 50%);position:absolute;top:-22px;z-index:1;box-shadow:0 0 5px #707070;transition:all .3s ease 0s}
+.pricingTable10:hover .pricing-content ul:after,.pricingTable10:hover .pricing-content ul:before{background:linear-gradient(to bottom,#40c4db 50%,#34bacc 50%)}
+.pricingTable10 .pricing-content ul:before{left:44px}
+.pricingTable10 .pricing-content ul:after{right:44px}
+.pricingTable10 .pricing-content ul li{font-size:15px;font-weight:700;color:#777473;padding:10px 0;border-bottom:1px solid #d9d9d8}
+.pricingTable10 .pricing-content ul li:last-child{border-bottom:none}
+.pricingTable10 .read{display:inline-block;font-size:16px;color:#fff;text-transform:uppercase;background:#d9d9d8;padding:8px 25px;margin:30px 0;transition:all .3s ease 0s}
+.pricingTable10 .read:hover{text-decoration:none}
+.pricingTable10:hover .read{background:#09b1c5}
+@media screen and (max-width:990px){.pricingTable10{margin-bottom:25px}
+}
+/* Credit to https://bootsnipp.com/snippets/92erW */
+</style>	
+
+
+
+<div> 
+	<div class="row">
+		<div class="col-sm-12">
+					
+			<p>&nbsp;</p>
+			<div class="text-center">
+				<h3>Choose Your Plan</h3>
+			</div>
+			<p>&nbsp;</p>
+		
+			
+		<%-- found on https://web-eau.net/en/blog/10-examples-pricing-table-bootstrap --%>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Free</h3>
+                                <span class="price-value">
+                                    <span class="currency">$</span> 0
+                                    <span class="month">/month</span><br />
+                                </span>
+                            </div>
+                            <div class="pricing-content text-left">
+                            	Suitable for individuals and small businesses managing their own timestamps 
+                            	without requiring support for large volume operations.
+                            	<hr />
+                                Features:
+								<ul class="pcng">
+									<li>Get free, verified timestamps from trusted Timestamp Service Authorities (one file per request)</li>
+									<li>Download request and response files for a timestamp to verify at a later time</li>
+									<li>Calculate files and strings hashcodes using multiple algorithms and output formats</li>
+									<li>Comprehensive documentation and active community support</li>
+								</ul>
+                            </div>
+                            <a href="/tools/timestampAttestation.html" class="read">Get Started</a>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Premium</h3>
+                                <span class="price-value">
+                                    <span class="currency">$</span> 20
+                                    <span class="month">/month</span>
+                                </span>
+                            </div>
+                            <div class="pricing-content text-left">
+                            	Long-term timestamp storage for individuals and small businesses who require professional features.
+								<hr />
+                                All free features, plus:
+								<ul class="pcng">
+									<li>Bulk request timestamp attestations for multiple files at once</li>
+									<li>Securely store your timestamp data and files on our servers for later retrieval</li>
+									<li>Establish an end-of-life policy for timestamps</li>
+									<li>Periodic re-stamping with timestamp chaining for continuous document validity</li>
+                                	<li>Enable multi-user access to your company's data (5 user per account)</li>
+									<li>Standard support during working hours</li>
+								</ul>
+                            </div>
+                            <%-- <a href="#" class="read">Get Started</a> --%>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#pricingModal">Get Started</button>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-4 col-sm-6">
+                        <div class="pricingTable10">
+                            <div class="pricingTable-header">
+                                <h3 class="heading">Enterprise</h3>
+                                <span class="price-value">
+                                    <span class="currency">$</span> 499
+                                    <span class="month">/month</span>
+                                </span>
+                            </div>
+                            <div class="pricing-content text-left">
+                            	Suitable for larger companies who need extra support, control, flexibility and 
+								security over the management of their data.
+								<hr />
+                                All premium features, plus:
+                                <ul class="pcng">
+                                	<li>Unlimited timestamps and storage</li>
+                                	<li>Configure your own Timestamp Service Authorities</li>
+                                	<li>Generate multiple timestamps per sensitive document for enhanced verification</li>
+                                	<li>Automate and integrated transactions with our API</li>
+                                	<li>Optionally deploy our product on-premises for greater control and security</li>
+                                	<li>Advanced reporting and analytics</li>
+                                    <li>Dedicated customer support during business hour</li>
+                                </ul>
+                            </div>
+                            <%-- <a href="#" class="read">Get Started</a> --%>
+                            <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#pricingModal">Get Started</button>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+
+
+	</div>
+</div>	
+
+
+<!-- Modal -->
+<div id="pricingModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <img src="https://cdn.upandcoding.com/integriter/img/logo.png" style="margin-top: -10px" height="40px" width="123px" title="Integriter" /></a>
+        <h4 class="modal-title">Be the First to Know</h4>
+      </div>
+      <div class="modal-body">
+        <p>Thank you for your interest in our web application! 
+        We are currently in the process of finalizing some details, and we're not yet ready to open access to the public.</p>
+        <p> 
+        However, we'd love to keep you in the loop about our progress and let you know when we're ready to launch. 
+        Please enter your email address below, and we'll notify you as soon as we have more news to share.</p>
+        <form id="sendMail" action="https://www.integriter.com/tools/contactUs.html" method="POST" style="display: block;">
+        	<div id="email-group" class="form-group">
+	          <label for="email">Email</label>
+	          <input type="hidden" id="_csrf" name="_csrf" value="" />
+	          <input
+	            type="text"
+	            class="form-control"
+	            id="email"
+	            name="email"
+	            placeholder="email@example.com"
+	          />
+	          <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+			  <div class="g-recaptcha" data-sitekey="6LdBFS8kAAAAAMzc9mf7XUBGRPS6mISJmvOlbPQX" data-size="normal"></div>
+        	  <button type="submit" class="btn btn-success">
+	          	Submit
+	          </button>
+        	</div>
+        	<script>
+		        $("#sendMail").submit(function(e) {
+				    e.preventDefault(); // avoid to execute the actual submit of the form.
+				    
+				    var crsfValue = document.getElementById("csrfMaster").value;
+				    document.getElementById("_csrf").value=crsfValue;
+				    
+				    var form = $(this);
+				    var actionUrl = form.attr('action');
+				    console.log("actionUrl: " + actionUrl);
+				    $.ajax({
+				        type: "POST",
+				        url: actionUrl,
+				        data: form.serialize(), // serializes the form's elements.
+				        success: function(data){
+				        	console.log('Submission was successful.');
+				          	console.log(data); 
+				          	document.getElementById("sendMail").style.display="none";
+				          	document.getElementById("thankYou").style.display="block";
+				        },
+			            error: function (data) {
+			                console.log('An error occurred.');
+			                console.log(data);
+			            }
+				    });
+				});
+	        </script>
+        </form>
+        <div id="thankYou" style="display: none">
+        	<b>Thank you! We will keep you informed</b>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

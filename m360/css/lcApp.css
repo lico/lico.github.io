@@ -1,0 +1,185 @@
+body { 
+	padding: 0; 
+}
+
+h3 {
+	border: 2px solid lightgrey;
+	padding: 15px; 
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-top: -1px;  
+	margin-bottom:-10px;
+}
+
+.lcHeader {
+	margin-top: 15px;  
+}
+
+.lcInlineHelp {
+	color: #999999;
+}
+
+.page-header, .page-header h1 {
+	margin-top:0;
+	margin-bottom:10px;
+	padding-top: 0px;  
+	padding-bottom:10px;
+	border: 0px solid red; 
+	background-color: #eeeeee;
+}
+
+.panel-heading {
+	font-weight: bold; 
+}
+
+.errorLCblock {
+	color: #ff0000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	margin: 16px;
+}
+
+.errorLCitem {
+	color: #ff0000;
+}
+.navbar-default {
+  /* font-size: large; */
+  font-weight: bold;   
+}
+
+.rowHighlight {
+	border-style: double; 
+	border-color: grey; 
+	border-width: 2px;
+}
+	
+/* *************** */
+/* BOOTSTRAP THEME */
+/* https://work.smarchal.com/twbscolor/3.3.2/css/d1d5c6b0bcba2b5a886f8ba00 */
+/*
+.navbar-default {
+  background-color: #d1d5c6;
+  border-color: #b0bcba;
+  font-size: large;  
+}
+.navbar-default .navbar-brand {
+  color: #2b5a88;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #6f8ba0;
+}
+.navbar-default .navbar-text {
+  color: #2b5a88;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #2b5a88;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #6f8ba0;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #6f8ba0;
+  background-color: #b0bcba;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #6f8ba0;
+  background-color: #b0bcba;
+}
+.navbar-default .navbar-toggle {
+  border-color: #b0bcba;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #b0bcba;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2b5a88;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #2b5a88;
+}
+.navbar-default .navbar-link {
+  color: #2b5a88;
+}
+.navbar-default .navbar-link:hover {
+  color: #6f8ba0;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #2b5a88;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #6f8ba0;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #6f8ba0;
+    background-color: #b0bcba;
+  }
+}
+*/
+/* BOOTSTRAP THEME */
+/* *************** */
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: -50;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+h5 {
+	font-weight: bold;
+}
+.accountName {
+	font-size: 10px;
+}
+.nullValueView {
+	color: blacl;
+	font-weight: bold;
+}
+.negativeValueView {
+	color: red;
+	font-weight: bold;
+}
+.positiveValueView {
+	/* color: black; */
+	color: green;
+	font-weight: bold;
+}
+.negativeValue {
+	color: red;
+	font-size: 12px;
+}
+.positiveValue {
+	color: black;
+	font-size: 12px;
+}
+.positiveAccountValue {
+	color: green;
+	font-weight: bold;
+}
+.negativeAccountValue {
+	color: red;
+	font-weight: bold;
+}

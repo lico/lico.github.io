@@ -1,0 +1,43 @@
+		
+		
+		<p>
+		Welcome to our electronic signature and timestamp service! 
+		</p>
+		
+		<p>
+		Our mission is to provide you with a reliable and easy-to-use platform 
+		to work with the latest features in electronic signatures, fingerprints, and timestamps.
+		</p>
+		
+		<p>
+		Thank you for choosing our service. We are constantly working to improve our platform and offer new features, so stay tuned for updates. 
+		If you have any questions, please don't hesitate to <a href="mailto:customer.service@integriter.com">contact us</a>.
+		</p>
+		
+		<p>&nbsp;</p>
+
+		<div class="panel panel-info">
+			
+			<div class="panel-heading">
+		    	<h3 class="panel-title">Information and Disclaimers for Our Free Tools</h3>
+		  	</div>
+		  	<div class="panel-body">
+		  		<p>
+		  		Please note that the free tools we provide are offered on an as-is basis and do not come with any guarantees or warranties. 
+		  		While we strive to make our tools as accurate and reliable as possible, we cannot guarantee their effectiveness or suitability 
+		  		for your specific needs.
+
+				<p>
+				If you require more robust or reliable tools, we recommend considering <a href="/tools/pricing.html">our paid subscription service</a> which offers 
+				additional features and benefits. Our paid service is designed to provide you with greater assurance and peace of mind, 
+				with the added advantage of dedicated support and access to a team of experts.
+				</p>
+				
+				<p>
+				Thank you for using our tools, and please don't hesitate to contact us if you have any questions or concerns.
+		  		</p>
+			</div>
+		</div>
+
+		
+		

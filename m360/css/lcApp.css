@@ -61,21 +61,21 @@ h3 {
 /* Bootstrap 3-like table styles */
 .table {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.428571429;
 }
 
 /* For form controls to match Bootstrap 3 style */
 .form-control, .form-select {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.428571429;
 }
 
 /* For labels to match Bootstrap 3 style */
 .form-label {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 /* ***************** */

@@ -54,11 +54,9 @@ h3 {
 	border-width: 2px;
 }
 
-/* Remove underline */
 .no-link-underline a {
     text-decoration: none;
 }
-/* If you want the underline to appear on hover */
 .no-link-underline a:hover {
     text-decoration: underline;
 }
@@ -90,6 +88,12 @@ h3 {
     width: 40px;  
     text-align: center;
 }
+/* select2 containers */ 
+.select2-container .select2-selection--single {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 /* ***************** */
 /* BOOTSTRAP3 THEMES */
 /* ***************** */

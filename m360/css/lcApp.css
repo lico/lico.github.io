@@ -86,6 +86,10 @@ h3 {
     font-size: 14px;
     font-weight: normal;
 }
+.filter-label {
+    width: 40px;  /* or whatever width works best for your icons */
+    text-align: center;
+}
 /* ***************** */
 /* BOOTSTRAP3 THEMES */
 /* ***************** */

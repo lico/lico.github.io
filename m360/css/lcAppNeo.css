@@ -51,7 +51,7 @@ h3 {
 .rowHighlight {
 	border-style: double; 
 	border-color: grey; 
-	border-width: 2px;
+	border-width: 3px;
 }
 
 .no-link-underline a {

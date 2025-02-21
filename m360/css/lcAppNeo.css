@@ -48,12 +48,13 @@ h3 {
   font-weight: bold;   
 }
 
-.rowHighlight,
-.rowHighlight td,
-.rowHighlight th {
+.rowHighlight{
 	border-style: double; 
 	border-color: grey; 
 	border-width: 3px;
+}
+.rowHighlight td,
+.rowHighlight th {
 	background-color: LightGoldenrodYellow;
 }
 

@@ -52,6 +52,7 @@ h3 {
 	border-style: double; 
 	border-color: grey; 
 	border-width: 3px;
+	background-color: LightGoldenrodYellow;
 }
 
 .no-link-underline a {

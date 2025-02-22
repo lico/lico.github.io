@@ -65,6 +65,52 @@ h3 {
     text-decoration: underline;
 }
 
+/* ************************* */
+/* M360 VIEWS                */
+/* ************************* */
+.input-group .select2-container {
+	flex: 1 1 auto;
+	width: auto !important;
+}
+
+.input-group .select2-container .select2-selection {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	height: 100%;
+	border-left: 1px solid #dee2e6 !important; /* Add this line to show the left border */
+}
+
+.input-group .select2-container--default .select2-selection--single {
+	border: 1px solid #dee2e6; /* Ensure all borders are visible */
+}
+.input-group-text {
+	min-width: 50px;  /* or whatever width you prefer */
+	justify-content: center;  /* This centers the icon */
+}
+
+/* tables in Bootstrap5 that looks like bootstrap3 */
+.table > :not(caption) > * > * {
+	border-color: #ddd !important;
+}
+
+.table > :not(caption) > * {
+	border-bottom-color: #ddd !important;
+}
+
+/* For table headers */
+.table thead th {
+	border-color: #ddd !important;
+}
+
+/* For horizontal row borders */
+.table tbody tr {
+	border-color: #ddd !important;
+}
+/* /tables in Bootstrap5 that looks like bootstrap3 */
+/* ************************* */
+/* M360 VIEWS                */
+/* ************************* */
+
 /* ***************** */
 /* BOOTSTRAP3 THEMES */
 /* ***************** */

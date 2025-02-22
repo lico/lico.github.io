@@ -138,11 +138,6 @@ h3 {
     width: 40px;  
     text-align: center;
 }
-/* select2 containers */ 
-.select2-container .select2-selection--single {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
 
 /* ***************** */
 /* BOOTSTRAP3 THEMES */

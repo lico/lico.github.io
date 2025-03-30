@@ -1,4 +1,4 @@
-function confirmDeleteOld(delForm, itemName) {
+function confirmDelete(delForm, itemName) {
     if (confirm("Delete " + itemName +"?")) {
     	// pas de redirection dans le JS, l'action est exécutée via un POST, le bouton étant du type SUBMIT
         return true;
@@ -6,7 +6,7 @@ function confirmDeleteOld(delForm, itemName) {
     return false;
 }
 
-function confirmDelete(delForm, itemName) {
+function confirmDeleteNew2(delForm, itemName) {
 	// Prevent the default form submission
     if (event) {
         event.preventDefault();

@@ -37,3 +37,26 @@ function confirmDelete(delForm, itemName) {
     return false;
 }
  
+$('#toto').on('click', function(){
+	$.confirm({
+		title: 'Confirm Deletion',
+		content: 'Delete deletion of : ' + itemName,
+		type: 'red',
+		buttons: {
+			confirm: 
+				text: 'Confirm',
+				btnClass: 'btn-primary',
+				action: function(){
+					$.alert('Confirmed!');
+					return true;
+				}
+			},
+			cancel: {
+				text: 'Cancel',
+				action: function(){
+					return false;
+				}
+			}
+		}
+	});
+});

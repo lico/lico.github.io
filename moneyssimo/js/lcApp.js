@@ -27,7 +27,6 @@ function confirmDelete(delForm, itemName) {
 		cancel: {
 		  text: 'Cancel',
 		  action: function(){
-			  $.alert('Canceled!');
 			return false;
 		  }
 		}

@@ -1,0 +1,276 @@
+body { 
+	padding: 0; 
+}
+
+h3 {
+	border: 2px solid lightgrey;
+	padding: 15px; 
+	padding-bottom: 10px;
+	padding-top: 10px;
+	margin-top: -1px;  
+	margin-bottom:-10px;
+}
+
+.lcHeader {
+	margin-top: 15px;  
+}
+
+.lcInlineHelp {
+	color: #999999;
+}
+
+.page-header, .page-header h1 {
+	margin-top:0;
+	margin-bottom:10px;
+	padding-top: 0px;  
+	padding-bottom:10px;
+	border: 0px solid red; 
+	background-color: #eeeeee;
+}
+
+.panel-heading {
+	font-weight: bold; 
+}
+
+.errorLCblock {
+	color: #ff0000;
+	background-color: #ffEEEE;
+	border: 3px solid #ff0000;
+	padding: 8px;
+	margin: 16px;
+}
+
+.errorLCitem {
+	color: #ff0000;
+}
+.navbar-default {
+  /* font-size: large; */
+  font-weight: bold;   
+}
+
+.rowHighlight{
+	border-style: double; 
+	border-color: grey; 
+	border-width: 3px;
+}
+.rowHighlight td,
+.rowHighlight th {
+	background-color: Khaki;
+}
+
+.no-link-underline a {
+    text-decoration: none;
+}
+.no-link-underline a:hover {
+    text-decoration: underline;
+}
+
+/* ************************* */
+/* M360 VIEWS                */
+/* ************************* */
+.input-group .select2-container {
+	flex: 1 1 auto;
+	width: auto !important;
+}
+
+.input-group .select2-container .select2-selection {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+	height: 100%;
+	border-left: 1px solid #dee2e6 !important; /* Add this line to show the left border */
+}
+
+.input-group .select2-container--default .select2-selection--single {
+	border: 1px solid #dee2e6; /* Ensure all borders are visible */
+}
+.input-group-text {
+	min-width: 50px;  /* or whatever width you prefer */
+	justify-content: center;  /* This centers the icon */
+}
+
+/* tables in Bootstrap5 that looks like bootstrap3 */
+.table > :not(caption) > * > * {
+	border-color: #ddd !important;
+}
+
+.table > :not(caption) > * {
+	border-bottom-color: #ddd !important;
+}
+
+/* For table headers */
+.table thead th {
+	border-color: #ddd !important;
+}
+
+/* For horizontal row borders */
+.table tbody tr {
+	border-color: #ddd !important;
+}
+/* /tables in Bootstrap5 that looks like bootstrap3 */
+/* ************************* */
+/* M360 VIEWS                */
+/* ************************* */
+
+/* ***************** */
+/* BOOTSTRAP3 THEMES */
+/* ***************** */
+/* Bootstrap 3-like table styles */
+.table {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+}
+
+/* For form controls to match Bootstrap 3 style */
+.form-control, .form-select {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.428571429;
+}
+
+/* For labels to match Bootstrap 3 style */
+.form-label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+.filter-label {
+    width: 40px;  
+    text-align: center;
+}
+
+/* ***************** */
+/* BOOTSTRAP3 THEMES */
+/* ***************** */
+
+
+	
+/* *************** */
+/* BOOTSTRAP THEME */
+/* https://work.smarchal.com/twbscolor/3.3.2/css/d1d5c6b0bcba2b5a886f8ba00 */
+/* 
+.navbar-default {
+  background-color: #d1d5c6;
+  border-color: #b0bcba;
+  font-size: large;  
+}
+.navbar-default .navbar-brand {
+  color: #2b5a88;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #6f8ba0;
+}
+.navbar-default .navbar-text {
+  color: #2b5a88;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #2b5a88;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #6f8ba0;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #6f8ba0;
+  background-color: #b0bcba;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #6f8ba0;
+  background-color: #b0bcba;
+}
+.navbar-default .navbar-toggle {
+  border-color: #b0bcba;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #b0bcba;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #2b5a88;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #2b5a88;
+}
+.navbar-default .navbar-link {
+  color: #2b5a88;
+}
+.navbar-default .navbar-link:hover {
+  color: #6f8ba0;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #2b5a88;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #6f8ba0;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #6f8ba0;
+    background-color: #b0bcba;
+  }
+}
+*/
+/* BOOTSTRAP THEME */
+/* *************** */
+
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: -50;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+h5 {
+	font-weight: bold;
+}
+.accountName {
+	font-size: 10px;
+}
+.nullValueView {
+	color: blacl;
+	font-weight: bold;
+}
+.negativeValueView {
+	color: red;
+	font-weight: bold;
+}
+.positiveValueView {
+	/* color: black; */
+	color: green;
+	font-weight: bold;
+}
+.negativeValue {
+	color: red;
+	font-size: 12px;
+}
+.positiveValue {
+	color: black;
+	font-size: 12px;
+}
+.positiveAccountValue {
+	color: green;
+	font-weight: bold;
+}
+.negativeAccountValue {
+	color: red;
+	font-weight: bold;
+}

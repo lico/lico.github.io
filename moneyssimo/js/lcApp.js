@@ -43,7 +43,7 @@ $('#toto').on('click', function(){
 		content: 'Delete deletion of : ' + itemName,
 		type: 'red',
 		buttons: {
-			confirm: 
+			confirm: {
 				text: 'Confirm',
 				btnClass: 'btn-primary',
 				action: function(){

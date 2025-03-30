@@ -7,8 +7,10 @@ function confirmDeleteOld(delForm, itemName) {
 }
 
 function confirmDelete(delForm, itemName) {
-	var inSt = $(this).prop('checked');
-	var $toggle = $(this);
+	// Prevent the default form submission
+    if (event) {
+        event.preventDefault();
+    }
 	
 	$.confirm({
 	  title: 'Confirm Deletion',
@@ -31,5 +33,8 @@ function confirmDelete(delForm, itemName) {
 		}
 	  }
 	});
+	
+	 // Always return false to prevent the original event from continuing
+    return false;
 }
  

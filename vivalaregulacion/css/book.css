@@ -1,0 +1,55 @@
+.custom-panel {
+  border-radius: 15px; /* Coins arrondis */
+  border: none; /* Pas de bordure par défaut */
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Transition douce lors du survol */
+}
+
+.custom-panel:hover {
+  border: 1px solid #ddd; /* Affiche la bordure lors du survol */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+}
+.bookAuthorVLR{
+   margin-top: 10px;
+    margin-bottom: 10px;
+color: DarkRed;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'HCo Gotham', sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.27px;
+}
+.editorVLR{
+color: black;
+font-style: italic;
+font-size: 16px;
+  line-height: 2;
+}
+.bookTitleVLR{
+color: DarkRed;
+font-weight: bold; 
+font-variant: small-caps;
+font-size: 50px;
+}
+.bookSubtitleVLR{
+line-height: 1;
+color: crimson;
+font-weight: bold; 
+font-variant: small-caps;
+font-size: 32px;
+}
+.bookGenreVLR {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.bookComm {
+  margin-top: 10px;
+}
+.bookDate {
+    font-size: 10px;
+    font-family: 'HCo Gotham', sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}

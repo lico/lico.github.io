@@ -1,0 +1,987 @@
+ <!-- PDF.js CSS -->
+    <style>
+        .pdf-container {
+            text-align: center;
+            margin: 2px 0;
+        }
+        
+        .pdf-excerpt {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+        }
+        
+        .pdf-viewer-modal .modal-dialog {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2% auto;
+        }
+        
+        .pdf-viewer-modal .modal-content {
+            height: 90vh;
+        }
+        
+        .pdf-viewer-modal .modal-body {
+            padding: 0;
+            height: calc(90vh - 120px);
+            overflow: hidden;
+        }
+        
+        #pdfCanvas {
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .pdf-controls {
+            background: #f5f5f5;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .pdf-controls button {
+            margin: 0 5px;
+        }
+        
+        .page-info {
+            display: inline-block;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        
+        .canvas-container {
+            text-align: center;
+            overflow: auto;
+            height: 100%;
+            padding: 20px;
+        }
+        
+        .loading-spinner {
+            text-align: center;
+            padding: 50px;
+        }
+    </style>
+
+<style>
+        /* Style pour l'overlay de l'image chargée */
+        .image-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 9999;
+            display: none;
+        }
+        
+        .image-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            max-width: 90vw;
+            max-height: 90vh;
+            text-align: center;
+        }
+        
+        .loaded-image {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            z-index: 10000;
+        }
+        
+        .close-btn:hover {
+            color: #ccc;
+        }
+        
+        /* Style pour le curseur pointer sur l'image cliquable */
+        .clickable-image {
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+        
+        .clickable-image:hover {
+            transform: scale(1.05);
+        }
+        
+        /* Loading spinner */
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+
+<style>
+.custom-panel {
+  border-radius: 15px; /* Coins arrondis */
+  border: none; /* Pas de bordure par défaut */
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Transition douce lors du survol */
+}
+
+.custom-panel:hover {
+  border: 1px solid #ddd; /* Affiche la bordure lors du survol */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre */
+}
+.bookAuthorVLR{
+   margin-top: 10px;
+    margin-bottom: 10px;
+color: DarkRed;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'HCo Gotham', sans-serif;
+    font-weight: 400;
+    line-height: 1.25;
+    letter-spacing: 0.27px;
+}
+.editorVLR{
+color: black;
+font-style: italic;
+font-size: 16px;
+  line-height: 2;
+}
+.bookTitleVLR{
+color: DarkRed;
+font-weight: bold; 
+font-variant: small-caps;
+font-size: 50px;
+}
+.bookSubtitleVLR{
+line-height: 1;
+color: crimson;
+font-weight: bold; 
+font-variant: small-caps;
+font-size: 32px;
+}
+.bookGenreVLR {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.bookComm {
+  margin-top: 10px;
+}
+.bookDate {
+    font-size: 10px;
+    font-family: 'HCo Gotham', sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+</style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            color: black;
+            padding: 100px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            animation: float 20s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(1deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .badge {
+            background: #ff6b6b;
+            color: white;
+            padding: 10px 25px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            animation: slideInUp 1s ease-out;
+        }
+
+        @keyframes slideInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            animation: slideInUp 1s ease-out 0.3s both;
+        }
+
+        .cta-button {
+            background: #ff6b6b;
+            color: white;
+            padding: 20px 50px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+            animation: slideInUp 1s ease-out 0.6s both;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(255, 107, 107, 0.6);
+            background: #ff5252;
+        }
+
+        .section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .testimonials {
+            background: #f8f9fa;
+            text-align: center;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .testimonial {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .testimonial:hover {
+            transform: translateY(-10px);
+        }
+
+        .stars {
+            color: #ffc107;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .urgency {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+        }
+
+        .countdown {
+            background: #e74c3c;
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 40px 0;
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .feature {
+            text-align: center;
+            padding: 30px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #667eea;
+        }
+
+        .price-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .price-box {
+            background: white;
+            color: #333;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .old-price {
+            font-size: 1.5rem;
+            text-decoration: line-through;
+            color: #999;
+            margin-bottom: 10px;
+        }
+
+        .new-price {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin-bottom: 30px;
+        }
+
+        .guarantee {
+            background: #27ae60;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 40px 0;
+            text-align: center;
+        }
+
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero .subtitle {
+                font-size: 1.2rem;
+            }
+            
+            .section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+
+
+
+<!-- ====== End Hero ======  -->
+
+
+<!-- ====== Services 1======  -->
+<section class="services section-padding bg-gray pb-70" data-scroll-index="2">
+	<div class="container"><!-- section heading -->
+		<div class="text-left">&nbsp;
+		</div>
+		<div class="row">
+			<!--  **********  -->
+			<!--     COL 1  -->
+			<!--  **********  -->
+			<div class="col-md-5">
+
+<div class="panel panel-default custom-panel">
+     <div class="panel-body">
+          <div class="text-center" style="margin-bottom: 10px">
+              <img id="clickableImage" class="clickable-image" style="border-radius: 20px;" 
+                 src="https://cdn.upandcoding.com/vivalaregulacion/img/vivalaregulacion_cover.png" 
+                 height="80%" width="80%" />
+          </div>
+          <div class="text-center" style="margin-bottom: 10px; line-height: 1.25;"> 
+               Prix: <b>14,90 €</b><br /><b>310 pages</b> (13,34 cm x 20,32 cm) <br />
+               <b>Exclusivité Amazon à partir du</b> <br />
+               
+          </div>
+		  <div class="text-center"> 
+			<div class="badge" style="font-size: 22px; font-weight:bold">🔥 21 août 2025 🔥</div>
+		</div>
+
+
+
+          <!-- Overlay pour afficher l'image chargée -->
+        <div id="imageOverlay" class="image-overlay">
+            <div class="close-btn" id="closeBtn">&times;</div>
+            <div class="image-container">
+                <div id="loadingSpinner" class="loading-spinner" style="display: none;"></div>
+                <img id="loadedImage" class="loaded-image" src="" alt="" style="display: none;">
+                <div id="imageControls" style="margin-top: 15px; display: none;">
+                    <button class="btn btn-default" id="closeOverlayBtn">Fermer</button>
+                </div>
+            </div>
+        </div>
+<!--
+ <a href="https://www.amazon.fr/dp/2295942574X" class="cta-button">Commander Maintenant</a>
+-->
+
+
+<!-- ====== EXTRAITS ======  -->
+<style>
+.img-extrait {
+    width: 100%;
+    height: auto;
+border: 2px solid grey;
+border-radius: 2px;
+}
+</style>
+            <!-- Extrait 1 -->
+            <div class="col-md-4">
+                        <button class="btn btn-light" onclick="openPDFViewer('https://cdn.upandcoding.com/vivalaregulacion/files/Vivalaregulacion_EXTRAIT1.pdf', 'Viva la regulación! - Extrait 1')">
+                    <img class="img-extrait" src="https://cdn.upandcoding.com/vivalaregulacion/img/extrait1.png"  />
+                        </button>
+                    <div class="pdf-container">
+                        <button class="btn btn-primary" onclick="downloadPDF('', 'Extrait 1')">
+                            <span class="glyphicon glyphicon-download-alt"></span>
+                        </button>
+                    </div>
+            </div>
+
+ <!-- Extrait 2 -->
+            <div class="col-md-4">
+                    <button class="btn btn-light" onclick="openPDFViewer('https://cdn.upandcoding.com/vivalaregulacion/files/Vivalaregulacion_EXTRAIT2.pdf', 'Viva la regulación! - Extrait 2')">
+                    <img class="img-extrait" src="https://cdn.upandcoding.com/vivalaregulacion/img/extrait2.png"  />
+</button>
+                    <div class="pdf-container">
+                        <button class="btn btn-primary" onclick="downloadPDF('', 'Extrait 2')">
+                            <span class="glyphicon glyphicon-download-alt"></span>
+                        </button>
+                    </div>
+            </div>
+
+<!-- Extrait 3 -->
+            <div class="col-md-4">
+                        <button class="btn btn-light" onclick="openPDFViewer('https://cdn.upandcoding.com/vivalaregulacion/files/Vivalaregulacion_EXTRAIT3.pdf', 'Viva la regulación! - Extrait 3')">
+                    <img  class="img-extrait" src="https://cdn.upandcoding.com/vivalaregulacion/img/extrait3.png" />
+                        </button>
+                    <div class="pdf-container">
+                        <button class="btn btn-primary" onclick="downloadPDF('', 'Extrait 3')">
+                            <span class="glyphicon glyphicon-download-alt"></span>
+                        </button>
+                    </div>
+            </div>
+
+        </div>
+</div>
+
+ <!-- Modal pour la visionneuse PDF -->
+    <div class="modal fade pdf-viewer-modal" id="pdfModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" id="pdfModalTitle">Visionneuse PDF</h4>
+                </div>
+                <div class="pdf-controls">
+                    <button class="btn btn-default btn-sm" id="prevPage">
+                        <span class="glyphicon glyphicon-chevron-left"></span> Précédent
+                    </button>
+                    <span class="page-info">
+                        Page <span id="currentPage">1</span> sur <span id="totalPages">1</span>
+                    </span>
+                    <button class="btn btn-default btn-sm" id="nextPage">
+                        Suivant <span class="glyphicon glyphicon-chevron-right"></span>
+                    </button>
+                    <div class="btn-group" style="margin-left: 20px;">
+                        <button class="btn btn-default btn-sm" id="zoomOut">
+                            <span class="glyphicon glyphicon-zoom-out"></span>
+                        </button>
+                        <button class="btn btn-default btn-sm" id="zoomIn">
+                            <span class="glyphicon glyphicon-zoom-in"></span>
+                        </button>
+                    </div>
+                    <button class="btn btn-primary btn-sm" id="downloadCurrent" style="margin-left: 20px;">
+                        <span class="glyphicon glyphicon-download-alt"></span> Télécharger
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="canvas-container" id="canvasContainer" style="display: none;">
+                        <canvas id="pdfCanvas"></canvas>
+                    </div>
+                </div>
+            </div>
+
+
+</div>
+</div>
+
+			</div>
+			<!--  **********  -->
+			<!--     COL 1  -->
+			<!--  **********  -->
+                         <!--  **********  -->
+			<!--     COL 2  -->
+			<!--  **********  -->
+			<div class="col-md-7">
+                            <div class="text-center">
+                                  <div>
+                                      <a href="/" style="text-decoration: none;"><span class="bookTitleVLR">Viva la RegulacióИ !</span></a>
+                                       <br />
+                                        <span class="bookSubtitleVLR">Changez votre vie en contrôlant <br />celle des autres</span>
+                                  </div>
+                                  <div style="margin-top: 12px;;">
+                                        <a href="/alex_conier-prunassier.html" style="text-decoration: none;">
+                                        <span class="bookAuthorVLR">par Alex Conier-Prunassier</span></a>
+                                        <br /><span class="editorVLR">Editions de la Ligne 14 (Sortie Chatelet)</span>
+                                 </div>
+
+<h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px; color: #2c3e50;">
+            Transformez l'incompétence en revenus passifs
+        </h2>
+<div class="text-left">
+<h4>Des résultats rapides grâce à une méthode inédite.</h4> 
+<p>Dès les 30 premiers jours, vous commencerez à rédiger des décrets pour encadrer les disputes familiales (avec barème des torts) et classer les amis de votre fille selon leur leur degré d’adhésion implicite au plan pluriannuel de cohabitation réglementée.</p>
+<h4>Taux de réussite garanti, satisfait ou déremboursé</h4>
+<p>Des huissiers assermentés ont observé des résultats spectaculaires chez les anciens élèves des écoles alsacienne, Stanislas et du cirque. </p>
+<p>Ailleurs, il a fallu les soudoyer ou les menacer de ne pas renouveller leur PASS de file d'attente au supermarché.</p>
+</div>
+
+        <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 20px; color: #2c3e50;">
+            Pourquoi ce livre fait sensation ?
+        </h2>
+<span>
+Honnêtement, on ne sait pas trop. D'autant plus que le livre n'est pas encore en vente ! Si quelqu’un comprend pourquoi ça marche, qu’il nous écrive. Les contributions les plus convaincantes recevront un PDF collector compilant les meilleures punchlines de l’ARCOM ainsi qu'une une série de clichés exclusifs de la ministre Mirlaine Schnouka animant un atelier de la convention citoyenne sur la gestion éco-responsable des cartes à jouer.
+</span>
+</div>
+</div>
+
+<div class="row">
+	<div class="col-md-12">
+    
+
+    
+
+<!-- ====== TESTIMONIALS ======  -->
+    <section class="testimonials">
+        <div class="section">
+            <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #2c3e50;">
+                Ce que disent nos lecteurs
+            </h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>« Ce livre a littéralement transformé ma vie. En trois mois, j’ai créé deux autorités indépendantes, réorganisé ma belle-famille en conseil consultatif, et imposé un formulaire à mon chat Bernard pour tout câlin. Je ne suis plus seule : je suis présidente de moi-même. »</p>
+                    <strong>- Tristine V., ex-psychomotricienne devenue commissaire aux usages domestiques</strong>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>« Avant ce livre, je croyais naïvement qu’on ne pouvait pas facturer l’écoute passive en réunion. Aujourd’hui, je suis rémunéré en jetons dématérialisés chaque fois que je hoche la tête. J’ai même obtenu une subvention pour me taire plus longtemps. »</p>
+                    <strong>- Kylian-Olivier M., chef de projet en assentiment silencieux</strong>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>« J’ai lu ce livre par erreur, en croyant que c’était un guide de jardinage. Trois mois plus tard, j’ai obtenu un agrément provisoire pour réguler les disputes conjugales de mes amis et voisins. Merci Alex, je croule désormais sous les demandes de médiation. »</p>
+                    <strong>- Juan B., régulateur bénévole de tensions de palier</strong>
+                </div>
+               
+            </div>
+        </div>
+<p></p>
+    </section>
+
+    
+
+
+    <section class="section" style="text-align: center;">
+         <h2 style="font-size: 2.5rem; margin-bottom: 30px; color: #2c3e50;">
+                Bonus Inclusifs Exclusivement Inclus
+        <br />
+        <span style="margin-top: 40px; font-weight: bold; color: #e74c3c; font-size: 22px; ">
+            Valeur totale des bonus : 2 675 € - OFFERTS AUJOURD'HUI !
+        </span>
+            </h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+            <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3>🎁 Le simulateur Excel de conflits d’intérêts</h3>
+                <p>
+<i>Créez, gérez, et externalisez vos conflits sans lever le petit doigt. Option d'envoi de SMS effaçables</i>
+<br /><b>Valeur : 1 239 € HT<br />(ou 4,6 jours de RTT)</b></p>
+            </div>
+            <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3>📋 Le générateur automatique de titres ronflants</h3>
+                <p><i>Exemples : «Responsable de Suivi en Concertation Unilatérale» ou «Inspecteur des Référentiels Auto-Référencés».</i>
+<br /><b>Valeur : 487 € (subvention demandable rétroactivement)</b></p>
+            </div>
+            <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3>💬 Le mug  floqué<br />«Article 1 : Moi»</h3>
+                <p><i>Un objet d’art à brandir ostensiblement lors des réunions de copropriété</i>
+
+<br /><b>Valeur : 83,21 € <br />(éligible à une subvention de la FRAC de votre région)</b></p>
+            </div>
+            <div style="background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+                <h3>🏆 La fiche-recette du gratin dauphinois servi aux journées parlementaires sur la dématérialisation éthique</h3>
+                <p><i>Inclut un QR code pour télécharger la version vegan et non-genrée.</i>
+
+<br /><b>Valeur : 26 € (hors frais de cuisson)</b></p>
+            </div>
+        </div>
+    </section>
+
+			</div>
+			<!--  **********  -->
+			<!--     COL 2  -->
+			<!--  **********  -->
+
+		</div>
+		<!-- /row -->
+</section>
+<!-- ====== End Services 1 ======  -->
+
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Bootstrap 3 JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            // **ICI** : Spécifiez le chemin de votre image prédéfinie
+            const IMAGE_TO_LOAD = 'https://cdn.upandcoding.com/vivalaregulacion/img/vivalaregulacion_cover_full.png';
+            
+            // Quand on clique sur l'image
+            $('#clickableImage').click(function(e) {
+                e.preventDefault(); // Empêche la redirection du lien
+                
+                // Affiche l'overlay avec le spinner de chargement
+                $('#imageOverlay').fadeIn(300);
+                $('#loadingSpinner').show();
+                $('#loadedImage').hide();
+                $('#imageControls').hide();
+                
+                // Charge l'image prédéfinie
+                loadPredefinedImage();
+            });
+            
+            function loadPredefinedImage() {
+                // Crée un nouvel objet Image pour précharger
+                const img = new Image();
+                
+                img.onload = function() {
+                    // Image chargée avec succès
+                    $('#loadedImage').attr('src', IMAGE_TO_LOAD);
+                    $('#loadingSpinner').hide();
+                    $('#loadedImage').fadeIn(500);
+                    $('#imageControls').fadeIn(300);
+                };
+                
+                img.onerror = function() {
+                    // Erreur de chargement
+                    $('#loadingSpinner').hide();
+                    $('#imageControls').html('<p class="text-danger">Erreur lors du chargement de l\'image</p><button class="btn btn-default" id="closeOverlayBtn">Fermer</button>').fadeIn(300);
+                    
+                    // Réattache l'événement au nouveau bouton
+                    $('#closeOverlayBtn').click(function() {
+                        $('#imageOverlay').fadeOut(300);
+                    });
+                };
+                
+                // Démarre le chargement
+                img.src = IMAGE_TO_LOAD;
+            }
+            
+            // Fermer l'overlay
+            $('#closeBtn, #closeOverlayBtn').click(function() {
+                $('#imageOverlay').fadeOut(300);
+            });
+            
+            // Fermer en cliquant sur le fond
+            $('#imageOverlay').click(function(e) {
+                if (e.target === this) {
+                    $(this).fadeOut(300);
+                }
+            });
+            
+            // Fermer avec la touche Escape
+            $(document).keydown(function(e) {
+                if (e.key === 'Escape') {
+                    $('#imageOverlay').fadeOut(300);
+                }
+            });
+        });
+    </script>
+
+
+    
+  <!-- Vos scripts jQuery et Bootstrap existants -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.4.10/jquery.smooth-scroll.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+        // Vérification que Bootstrap est bien chargé
+        if (typeof $.fn.modal === 'undefined') {
+            console.error('Bootstrap modal non disponible!');
+        } else {
+            console.log('Bootstrap modal disponible - Version jQuery:', $.fn.jquery);
+        }
+    </script>
+    
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+    <script>
+        // Configuration PDF.js
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+        let currentPDF = null;
+        let currentPage = 1;
+        let totalPages = 0;
+        let currentScale = 1.5;
+        let currentPDFUrl = '';
+        let currentPDFName = '';
+
+        // Fonction pour télécharger un PDF
+        function downloadPDF(filename, title) {
+            // Créer un lien de téléchargement
+            const link = document.createElement('a');
+            link.href = filename; // Remplacez par le vrai chemin de vos PDFs
+            link.download = filename;
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+
+        // Fonction pour ouvrir la visionneuse PDF
+        function openPDFViewer(pdfUrl, title) {
+            // Vérification que jQuery et Bootstrap sont disponibles
+            if (typeof $ === 'undefined') {
+                alert('jQuery n\'est pas chargé!');
+                return;
+            }
+            
+            if (typeof $.fn.modal === 'undefined') {
+                alert('Bootstrap modal n\'est pas disponible!');
+                return;
+            }
+            
+            currentPDFUrl = pdfUrl;
+            currentPDFName = title;
+            $('#pdfModalTitle').text(title);
+            
+            try {
+                $('#pdfModal').modal('show');
+            } catch(error) {
+                console.error('Erreur lors de l\'ouverture de la modal:', error);
+                alert('Erreur lors de l\'ouverture de la visionneuse');
+                return;
+            }
+            
+            // Réinitialiser les valeurs
+            currentPage = 1;
+            currentScale = 1.5;
+            
+            // Afficher le spinner de chargement
+            $('#loadingSpinner').show();
+            $('#canvasContainer').hide();
+            $('#loadingProgress').css('width', '0%');
+            
+            loadPDF(pdfUrl);
+        }
+
+        // Charger le PDF avec PDF.js
+        function loadPDF(url) {
+            const loadingTask = pdfjsLib.getDocument({
+                url: url,
+                onProgress: function(progress) {
+                    if (progress.total > 0) {
+                        const percent = (progress.loaded / progress.total) * 100;
+                        $('#loadingProgress').css('width', percent + '%');
+                    }
+                }
+            });
+
+            loadingTask.promise.then(function(pdf) {
+                currentPDF = pdf;
+                totalPages = pdf.numPages;
+                $('#totalPages').text(totalPages);
+                $('#currentPage').text(currentPage);
+                
+                // Masquer le spinner et afficher le canvas
+                $('#loadingSpinner').hide();
+                $('#canvasContainer').show();
+                
+                renderPage(currentPage);
+                updateButtons();
+            }).catch(function(error) {
+                console.error('Erreur lors du chargement du PDF:', error);
+                $('#loadingSpinner').html('<div class="alert alert-danger">Erreur lors du chargement du PDF</div>');
+            });
+        }
+
+        // Rendre une page spécifique
+        function renderPage(pageNum) {
+            if (!currentPDF) return;
+
+            currentPDF.getPage(pageNum).then(function(page) {
+                const canvas = document.getElementById('pdfCanvas');
+                const context = canvas.getContext('2d');
+                
+                const viewport = page.getViewport({ scale: currentScale });
+                canvas.height = viewport.height;
+                canvas.width = viewport.width;
+
+                const renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+
+                page.render(renderContext);
+                $('#currentPage').text(pageNum);
+            });
+        }
+
+        // Mettre à jour l'état des boutons
+        function updateButtons() {
+            $('#prevPage').prop('disabled', currentPage <= 1);
+            $('#nextPage').prop('disabled', currentPage >= totalPages);
+        }
+
+        // Gestionnaires d'événements
+        $(document).ready(function() {
+            // Vérifier que tout est bien chargé
+            console.log('jQuery version:', $.fn.jquery);
+            console.log('Bootstrap modal disponible:', typeof $.fn.modal !== 'undefined');
+            
+            // Navigation entre les pages
+            $('#prevPage').click(function() {
+                if (currentPage > 1) {
+                    currentPage--;
+                    renderPage(currentPage);
+                    updateButtons();
+                }
+            });
+
+            $('#nextPage').click(function() {
+                if (currentPage < totalPages) {
+                    currentPage++;
+                    renderPage(currentPage);
+                    updateButtons();
+                }
+            });
+
+            // Contrôles de zoom
+            $('#zoomIn').click(function() {
+                currentScale += 0.2;
+                renderPage(currentPage);
+            });
+
+            $('#zoomOut').click(function() {
+                if (currentScale > 0.4) {
+                    currentScale -= 0.2;
+                    renderPage(currentPage);
+                }
+            });
+
+            // Bouton de téléchargement dans la modal
+            $('#downloadCurrent').click(function() {
+                if (currentPDFUrl) {
+                    const link = document.createElement('a');
+                    link.href = currentPDFUrl;
+                    link.download = currentPDFName + '.pdf';
+                    link.target = '_blank';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                }
+            });
+
+            // Navigation au clavier
+            $(document).keydown(function(e) {
+                if ($('#pdfModal').hasClass('in') || $('#pdfModal').is(':visible')) {
+                    if (e.keyCode === 37) { // Flèche gauche
+                        $('#prevPage').click();
+                    } else if (e.keyCode === 39) { // Flèche droite
+                        $('#nextPage').click();
+                    } else if (e.keyCode === 27) { // Escape
+                        $('#pdfModal').modal('hide');
+                    }
+                }
+            });
+        });
+    </script>

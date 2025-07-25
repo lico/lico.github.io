@@ -1,0 +1,64 @@
+.pdf-container {
+            text-align: center;
+            margin: 2px 0;
+        }
+        
+        .pdf-excerpt {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: #f9f9f9;
+        }
+        
+        .pdf-viewer-modal .modal-dialog {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2% auto;
+        }
+        
+        .pdf-viewer-modal .modal-content {
+            height: 90vh;
+        }
+        
+        .pdf-viewer-modal .modal-body {
+            padding: 0;
+            height: calc(90vh - 120px);
+            overflow: hidden;
+        }
+        
+        #pdfCanvas {
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .pdf-controls {
+            background: #f5f5f5;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+        }
+        
+        .pdf-controls button {
+            margin: 0 5px;
+        }
+        
+        .page-info {
+            display: inline-block;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        
+        .canvas-container {
+            text-align: center;
+            overflow: auto;
+            height: 100%;
+            padding: 20px;
+        }
+        
+        .loading-spinner {
+            text-align: center;
+            padding: 50px;
+        }

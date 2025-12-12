@@ -55,7 +55,7 @@
 			<p>&nbsp;</p>
 			
 			<img class="img-fluid" 
-			     src="https://cdn.upandcoding.com/integriter/img/ChronoPreuve_services3.png" 
+			     src="https://cdn.upandcoding.com/integriter/img/integriter_services3.png" 
 				 alt="Ensuring documents integrity, one timestamp at a time" 
 				 title="Ensuring documents integrity, one timestamp at a time" />
 				

@@ -52,7 +52,7 @@
 				<br />
 				By keeping all file verification local, you never have to upload your data, ensuring a seamless, reliable way to prove file integrity without compromising privacy.
 			</h3>
-			<p>&nbsp;</p>
+			<p>&nbsp;</p> 
 			
 			<img class="img-fluid" 
 			     src="https://cdn.upandcoding.com/integriter/img/integriter_services3.png" 

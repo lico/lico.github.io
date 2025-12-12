@@ -17,11 +17,11 @@
 			<p>As soon as you select a file on your computer, the following happens:</p>
 			 
 			<ul>
-				<li>Integriter sends a request to the selected TSA,</li>
-				<li>The TSA will then create a timestamp token and will send it back to Integriter.</li>
-				<li>After receiving the timestamp from the TSA, Integriter 
+				<li>ChronoPreuve sends a request to the selected TSA,</li>
+				<li>The TSA will then create a timestamp token and will send it back to ChronoPreuve.</li>
+				<li>After receiving the timestamp from the TSA, ChronoPreuve 
 				performs several verifications to ensure the authenticity and integrity of the timestamp data.</li>
-				<li>If the verification succeeds, Integriter will display the timestamp to you along with the request and response files</li>
+				<li>If the verification succeeds, ChronoPreuve will display the timestamp to you along with the request and response files</li>
 			</ul>
 			 
 			<p>Please note: </p>

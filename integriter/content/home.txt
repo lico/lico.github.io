@@ -32,11 +32,11 @@
 			  </div>
 			  <div class="card-body">
 				<p class="card-text">
-					Thank you for choosing <b>Integriter.com</b>!
+					Thank you for choosing <b>ChronoPreuve.com</b>!
 					We’re constantly enhancing our platform and adding new features, so stay tuned for updates.
 					</p>
 					<p class="card-text">
-					Integriter.com is a free service provided by UpAndCoding.com. If you have any questions, suggestions, or concerns, feel free to <a href="mailto:integriter&#64;upandcoding&#46;com" style="font-weight: bold; text-decoration: underline;">contact us</a>. We’d love to hear from you!
+					ChronoPreuve.com is a free service provided by UpAndCoding.com. If you have any questions, suggestions, or concerns, feel free to <a href="mailto:ChronoPreuve&#64;upandcoding&#46;com" style="font-weight: bold; text-decoration: underline;">contact us</a>. We’d love to hear from you!
 					</p>
 				</div>
 			</div>
@@ -47,7 +47,7 @@
 		<div class="col-sm-8">
 					
 			<h3>
-				Integriter.com offers free hashcode calculations and secure electronic timestamps from trusted Timestamp Service Authorities (TSAs).
+				ChronoPreuve.com offers free hashcode calculations and secure electronic timestamps from trusted Timestamp Service Authorities (TSAs).
 				<br />
 				<br />
 				By keeping all file verification local, you never have to upload your data, ensuring a seamless, reliable way to prove file integrity without compromising privacy.
@@ -55,7 +55,7 @@
 			<p>&nbsp;</p>
 			
 			<img class="img-fluid" 
-			     src="https://cdn.upandcoding.com/integriter/img/integriter_services3.png" 
+			     src="https://cdn.upandcoding.com/integriter/img/ChronoPreuve_services3.png" 
 				 alt="Ensuring documents integrity, one timestamp at a time" 
 				 title="Ensuring documents integrity, one timestamp at a time" />
 				

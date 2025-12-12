@@ -72,7 +72,7 @@
 <p><strong>The right to object to processing</strong>&nbsp;&ndash; You have the right to object to Our Company&rsquo;s processing of your personal data, under certain conditions.</p>
 <p><strong>The right to data portability</strong>&nbsp;&ndash; You have the right to request that Wetransfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
 <p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us at our email:</p>
-<p>Or write to us: admin@integriter.com</p>
+<p>Or write to us: admin@chronopreuve.com</p>
 <h3>Cookies</h3>
 <p>Cookies are text files placed on your computer to collect standard Internet log information and visitor behavior information. When you visit our websites, we may collect information from you automatically through cookies or similar technology</p>
 <p>For further information, visit allaboutcookies.org.</p>
@@ -96,6 +96,6 @@
 <p>Wekeeps its privacy policy under regular review and places any updates on this web page. This privacy policy was last updated on 9 January 2019.</p>
 <h3>How to contact us</h3>
 <p>If you have any questions about Our Company&rsquo;s privacy policy, the data we hold on you, or you would like to exercise one of your data protection rights, please do not hesitate to contact us.</p>
-<p>Email us at: integriter&#64;upandcoding&#46;com</p>
+<p>Email us at: chronopreuve&#64;upandcoding&#46;com</p>
 <p>&nbsp;</p>
 
